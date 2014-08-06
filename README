@@ -1,0 +1,25 @@
+This is an Custom kernel Source code for the Wiko DarkMoon (MEDIATEK MT6582)
+Linux 3.4.5
+
+
+Building the Kernel:
+********************
+cd to kernel dir
+********************
+
+- Run script "./build.sh darkmoon" to begin with the build process.
+
+- Run script "./build.sh clean darkmoon" to clean the project
+
+
+  Once finished, you will find:
+  - The new kernel file in the root folder ./build_result/kernel/        --> zImage
+  - The new compiled modules in the root folder ./build_result/modules/  --> *.ko
+
+
+
+
+Have funn :)
+superdragonpt 
+
+
