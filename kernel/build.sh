@@ -9,8 +9,8 @@ makeflags="-w -j8"
 makedefs="V=0"
 makejobs=${MAKEJOBS}
 curdir=`pwd`
-TOOLCHAIN="./toolchain/arm-linux-androideabi-4.6/bin"
-#TOOLCHAIN="./toolchain/arm-linux-gnueabi-linaro_4.9.1-2014.07/bin"
+#TOOLCHAIN="./toolchain/arm-linux-androideabi-4.6/bin"
+TOOLCHAIN="./toolchain/arm-unknown-linux-gnueabi-linaro_4.6.4-2013.05/bin"
 
 #if [ "${KBUILD_OUTPUT_SUPPORT}" == "yes" ];then
 #  outdir=$curdir/out
@@ -202,8 +202,8 @@ done
 
 echo "####     Patching all built modules (.ko) in /build_result/modules/              ####"
 cd ..
-find ./build_result/modules/ -type f -name '*.ko' | xargs -n 1 $TOOLCHAIN/arm-linux-androideabi-strip --strip-unneeded
-#find ./build_result/modules/ -type f -name '*.ko' | xargs -n 1 $TOOLCHAIN/arm-linux-gnueabi-strip --strip-unneeded
+#find ./build_result/modules/ -type f -name '*.ko' | xargs -n 1 $TOOLCHAIN/arm-linux-androideabi-strip --strip-unneeded
+find ./build_result/modules/ -type f -name '*.ko' | xargs -n 1 $TOOLCHAIN/arm-unknown-linux-gnueabi-strip --strip-unneeded
 echo "####                          Finnish                                            ####"
 echo ""
 
