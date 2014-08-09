@@ -25,5 +25,5 @@
 #define MODULE_ARCH_VERMAGIC ""
 #endif
 
-#define VERMAGIC_STRING "3.4.0 SMP preempt mod_unload ARMv7 "
+#define VERMAGIC_STRING "3.4.5 SMP preempt mod_unload ARMv7 "
 
