@@ -1,4 +1,6 @@
-This is an Custom kernel Source code for the Wiko DarkMoon (MEDIATEK MT6582)
+This is an OpenSourced Custom kernel Source code for the Wiko DarkMoon  (MEDIATEK MT6582)
+As you know, Wiko, never released the proper buildable kernel sources for this device
+
 Linux 3.4.5
 
 
